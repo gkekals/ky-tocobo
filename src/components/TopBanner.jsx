@@ -28,10 +28,13 @@ const TopBanner = () => {
 
         ))}
       </Swiper>
-      <div className="closeBtn">
+      <div 
+      className="closeBtn" 
+      style={{backgroundImage:`url(${closeBtn})`}}
+      >
         close btn
       </div>
-      {/* {<img src={closeBtn} alt="" />} */}
+      
     </div>
   )
 }

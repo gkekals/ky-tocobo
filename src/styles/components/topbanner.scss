@@ -18,6 +18,13 @@
         position: absolute;
         right: 2rem;
         z-index: 5;
-        top: 0;
+        top: 50%;
+        width: 1.5rem;
+        height: 1.5rem;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        font-size: 0;
+        cursor: pointer;
     }
 }
