@@ -9,7 +9,7 @@ export const heroSlides = [
         subtitle: "Clean • Gentle • Effective",
         desc: "피부 본연의 균형을 위한 미니멀 케어",
         ctaText: "미니 선스틱 트리오 보기",
-        ctaHref: "/products",
+        ctaHref: "미니 선스틱 트리오 보기",
         image: {
             desktop: img("main_d_1.png"),
             mobile: img("main_mo_1.jpg"),
@@ -24,7 +24,7 @@ export const heroSlides = [
         subtitle: "Moisture Barrier Care",
         desc: "가볍지만 깊게, 산뜻한 촉촉함",
         ctaText: "컬러립밤 보러가기",
-        ctaHref: "/story/hydration",
+        ctaHref: "컬러립밤 보러가기",
         image: {
             desktop: img("main_d_2.png"),
             mobile: img("main_mo_2.jpg"),
@@ -39,7 +39,7 @@ export const heroSlides = [
         subtitle: "Sensitive Skin Friendly",
         desc: "민감 피부를 위한 무향 포뮬러",
         ctaText: "스타터 키트 보러가기",
-        ctaHref: "/collections/sensitive",
+        ctaHref: "스타터 키트 보러가기",
         image: {
             desktop: img("main_d_3.png"),
             mobile: img("main_mo_3.jpg"),
@@ -54,7 +54,7 @@ export const heroSlides = [
         subtitle: "Vegan & Cruelty-Free",
         desc: "지속 가능성을 생각한 깔끔한 선택",
         ctaText: "혜택보러가기",
-        ctaHref: "/about",
+        ctaHref: "혜택보러가기",
         image: {
             desktop: img("main_d_4.png"),
             mobile: img("main_mo_4.jpg"),

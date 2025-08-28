@@ -1,16 +1,18 @@
 .app-container {
-    &.up{
-        .TopBanner{
-            top:-110%
+    &.up {
+        .TopBanner {
+            top: -110%
         }
-        header{
+
+        header {
             top: 0;
         }
     }
 
     .Section {
         padding: 6rem 0;
-        &#Hero{
+
+        &#Hero {
             padding: 0;
         }
     }
@@ -27,11 +29,47 @@
     }
 }
 
-h2.tit{
+h2.tit {
     font-size: 7.3rem;
     font-weight: 200;
 }
-p.txt{
+
+p.txt {
     font-size: 2.1rem;
     line-height: 1.2;
+}
+
+a.btn {
+    display: inline-block;
+    margin-top: 3rem;
+    padding: 1.7rem 6.8rem;
+    font-size: 1.5rem;
+    position: relative;
+    color: var(--bg);
+    overflow: hidden;
+    border-radius: 6rem;
+    border: .1rem solid transparent;
+    transition: all .8s;
+
+    &:after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        display: block;
+        background-color: var(--secondary);
+        left: 0;
+        top: 0;
+        z-index: -1;
+        transition: all .5s;
+    }
+
+    &:hover {
+        border: .1rem solid var(--secondary);
+        color: var(--secondary);
+
+        &:after {
+            background-color: var(--bg);
+        }
+    }
 }

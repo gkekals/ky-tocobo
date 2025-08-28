@@ -10,19 +10,19 @@ const Header = () => {
 
   return (
     <div>
-      
+
 
       <header>
         <div className="inner">
           <Nav />
           <h1 className="tit">
             <a href={headerLogo.href}>
-            <img src={headerLogo.src} alt={headerLogo.alt}/>
+              <img src={headerLogo.src} alt={headerLogo.alt} />
             </a>
           </h1>
           <Util />
         </div>
-        Header
+
       </header>
     </div>
   )

@@ -10,6 +10,7 @@ import "./styles/main.scss"
 import TopBanner from "./components/TopBanner"
 import { useState } from "react"
 import TopBtn from "./components/TopBtn"
+import Hello from "./sections/Hello"
 function App() {
 
   const [topBanner,setTopBanner]=useState("")
@@ -23,9 +24,15 @@ function App() {
     <div id="top" className={`app-container ${topBanner}`}>
       <TopBanner onClick={upTopBanner}/>
       <TopBtn />
+      <Header/>
       <main>
         <section id="Hero" className="Section">
           <Hero />
+        </section>
+        <section id="Cta" className="Section">
+          <Cta />  
+        <section id="Hello" className="Section">
+          <Hello />
         </section>
         <section id="Brand" className="Section">
           <Brand />
@@ -36,8 +43,6 @@ function App() {
         <section id="Reviews" className="Section">
           <Reviews />
         </section>
-        <section id="Cta" className="Section">
-          <Cta />
         </section>
       </main>
       <Footer />
