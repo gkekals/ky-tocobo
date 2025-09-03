@@ -9,11 +9,26 @@
         }
     }
 
+    &.scrolled {
+        header {
+            background: #ffffff;
+            background: linear-gradient(180deg, rgba(255, 255, 255, 1) 24%, rgba(255, 255, 255, 0) 100%);
+        }
+        .fixed-top {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
     .Section {
         padding: 6rem 0;
 
         &#Hero {
             padding: 0;
+        }
+        &#Collection{
+            background-color: var(--bg2);
+            padding: 10rem 0;
         }
     }
 
@@ -21,7 +36,7 @@
     header,
     footer {
         .inner {
-            max-width: var(--maxw);
+            max-width: 128rem;
             height: 100%;
             position: relative;
             margin: auto;
@@ -32,11 +47,12 @@
 h2.tit {
     font-size: 7.3rem;
     font-weight: 200;
+    line-height: 1;
 }
 
 p.txt {
     font-size: 2.1rem;
-    line-height: 1.2;
+    list-style: 1.2
 }
 
 a.btn {
@@ -62,14 +78,21 @@ a.btn {
         top: 0;
         z-index: -1;
         transition: all .5s;
+
     }
 
     &:hover {
-        border: .1rem solid var(--secondary);
+        // border: .1rem solid var(--secondary);
         color: var(--secondary);
 
         &:after {
             background-color: var(--bg);
         }
     }
+
+}
+
+@keyframes up {
+    from{transform: translateY(0);}
+    to{transform: translateY(2rem);}
 }

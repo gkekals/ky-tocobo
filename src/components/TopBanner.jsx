@@ -1,9 +1,9 @@
 import React from 'react'
 import { headerData } from '../util/header'
 import { Swiper, SwiperSlide } from 'swiper/react'
-import "swiper/css"
+import "swiper/css";
 import "../styles/components/topbanner.scss"
-import { Autoplay } from 'swiper/modules'
+import { Autoplay } from 'swiper/modules';
 const TopBanner = ({onClick}) => {
 
   const tbData = headerData.topBanner.items
@@ -19,23 +19,22 @@ const TopBanner = ({onClick}) => {
       >
         {tbData.map((item) => (
           <SwiperSlide
-          key={item.id}
+            key={item.id}
           >
             <a href={item.href}>
-            {item.text}
+              {item.text}
             </a>
-            </SwiperSlide>
-
+          </SwiperSlide>
         ))}
       </Swiper>
       <div 
       className="closeBtn" 
-      style={{backgroundImage:`url(${closeBtn})`}}
       onClick={onClick}
+      style={{backgroundImage:`url(${closeBtn})`}}
       >
         close btn
       </div>
-      
+  
     </div>
   )
 }

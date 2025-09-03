@@ -2,3 +2,8 @@
 @use "./base/variables" as *;
 @use "./base/mixins" as *;
 @use "./base/common" as *;
+
+li a{
+    text-decoration: none;
+    color: black;
+}
