@@ -1,5 +1,6 @@
 const img = (path) => `/img/${path}`
 
+
 export const headerData = {
     logo: {
         src: img("logo.svg"),  // 예: /public/img/logo_tocobo.svg
@@ -29,9 +30,13 @@ export const headerData = {
         background: "#DC272D",
         color: "#fff",
     },
+
     utils: [
         { id: "search", label: "검색", icon: img("icon_search.svg"), href: "#" },
         { id: "account", label: "마이", icon: img("icon_myp.svg"), href: "#" },
         { id: "cart", label: "장바", icon: img("icon_cart.svg"), href: "#" },
     ],
+
+
+
 }

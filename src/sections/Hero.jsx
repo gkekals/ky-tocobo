@@ -20,7 +20,7 @@ const Hero = () => {
           type: 'fraction'
         }}
         loop={true}
-      //autoplay={true}
+      //  autoplay={true}
 
       >
 
@@ -35,24 +35,26 @@ const Hero = () => {
               <div className="t-wrap">
 
                 <h2 className='tit'
-                  dangerouslySetInnerHTML={{ __html: slide.title }} />
-
+                dangerouslySetInnerHTML={{ __html: slide.title }}
+                />
+                 
                 <p className="txt">
                   {slide.subtitle}
                 </p>
                 <a href={slide.ctaHref} className="btn">
-                  {slide.ctaHref}
+                  {slide.ctaText}
                 </a>
               </div>
             </div>
           </SwiperSlide>
         ))}
 
-        <div className="hero-nav">
-          <div className="arr-prev">prev</div>
-          <div className="swiper-pagination"></div>
-          <div className="arr-next">next</div>
-        </div>
+     <div className="hero-nav">
+      <div className="arr-prev">prev</div>
+      <div className="swiper-pagination"></div>
+      <div className="arr-next">next</div>
+     </div>
+
       </Swiper>
     </div>
   )

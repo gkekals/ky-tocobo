@@ -1,9 +1,9 @@
 import React from 'react'
 
 const Skincare = () => {
-    return (
-        <div>Skincare</div>
-    )
+  return (
+    <div>Skincare</div>
+  )
 }
 
 export default Skincare
