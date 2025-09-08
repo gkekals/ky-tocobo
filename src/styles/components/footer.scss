@@ -1,0 +1,147 @@
+.footer {
+    background: #fff;
+    color: #222;
+    border-top: 1px solid #eee;
+    /* 스샷 상단 구분선 */
+}
+
+.foot-inner {
+    display: grid;
+    grid-template-columns: 1.6fr 2fr 1.2fr;
+    /* 좌/중/우 */
+    gap: 32px;
+    padding: 40px 0 56px;
+}
+
+/* 좌측: 로고 + 회사정보 + 정책 + 카피라이트 */
+.left h3 img {
+    height: 28px;
+}
+
+.foot-lst-1 {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    color: #7a7a7a;
+    line-height: 1.6;
+    font-size: 13px;
+}
+
+.copy {
+    margin-top: 14px;
+    font-size: 12px;
+    color: #aaa;
+}
+
+.policy {
+    display: flex;
+    gap: 14px;
+    margin-top: 8px;
+}
+
+.policy a {
+    font-size: 12px;
+    color: #9a9a9a;
+}
+
+/* 가운데: 메뉴 4컬럼 */
+.foot-menus {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+}
+
+.foot-menu-col h4 {
+    font-weight: 600;
+    color: #d53030;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.foot-menu-col ul {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.foot-menu-col a {
+    color: #666;
+    font-size: 13px;
+}
+
+.foot-menu-col a:hover {
+    color: #111;
+}
+
+/* 우측: 고객센터 + 버튼 + SNS */
+.cs h4 {
+    font-weight: 600;
+    color: #d53030;
+    margin-bottom: 10px;
+}
+
+.cs-box a {
+    display: inline-block;
+    font-size: 22px;
+    font-weight: 800;
+    color: #d53030;
+}
+
+.talk-btn {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 8px 16px;
+    border: 1px solid #e6a5a5;
+    border-radius: 20px;
+    color: #c44747;
+}
+
+/* SNS 아이콘(원형 점 3개 예시) */
+.sns {
+    display: flex;
+    gap: 12px;
+    margin-top: 18px;
+}
+
+.sns .ico {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: inline-block;
+    background: #f5f5f5;
+}
+
+.sns .yt {
+    background: #f5f5f5;
+}
+
+.sns .ig {
+    background: #f5f5f5;
+}
+
+.sns .fb {
+    background: #f5f5f5;
+}
+
+/* 반응형 */
+@media (max-width: 1024px) {
+    .foot-inner {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .foot-menus {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 640px) {
+    .foot-menus {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .foot-menu-col h4 {
+        margin-top: 8px;
+    }
+}
