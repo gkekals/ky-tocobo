@@ -1,7 +1,7 @@
-import React from "react";
+import React from 'react';
 import { logoData, companyData, customerCenterData, footerMenus } from "../util/footer";
-import Nav from "./Nav";
-import "../../styles/components/footer.scss"; // 경로 한 단계 올림
+import Nav from './Nav';
+import "../styles/components/footer.scss"
 
 const Footer = () => {
   return (
@@ -9,45 +9,43 @@ const Footer = () => {
       <div className="inner foot-inner">
         <div className="left">
           <h3>
-            <a href={logoData.href} aria-label={logoData.alt}>
-              <img src={logoData.src} alt={logoData.alt} />
+            <a href="#">
+              <img src="" alt="" />
             </a>
           </h3>
 
           <ul className="foot-lst-1">
-            {companyData.map((line, idx) => (
-              <li key={idx}>{line}</li>
-            ))}
+            <li></li>
+
           </ul>
+
         </div>
 
         <div className="center">
           <div className="foot-menus">
-            {footerMenus.map((menu) => (
-              <div key={menu.title} className="foot-menu-col">
-                <h4>{menu.title}</h4>
+          
+              <div>
+                <h4></h4>
                 <ul>
-                  {menu.items.map((it) => (
-                    <li key={it.href}>
-                      <a href={it.href}>{it.label}</a>
+                    <li >
                     </li>
-                  ))}
                 </ul>
               </div>
-            ))}
           </div>
         </div>
-
+        {/* 오른쪽 영역(비워둠 / SNS 등 넣을 자리) */}
         <div className="right">
-          <div className="cs">
-            <h4>{customerCenterData.title}</h4>
-            <p className="cs-box">
-              <a href={customerCenterData.tel.href}>{customerCenterData.tel.value}</a>
+
+          {/* 고객센터 */}
+          <div>
+            <h4></h4>
+            <p className='cs-box'>
+              <a href="#">
+              </a>
             </p>
-            <p>{customerCenterData.hours}</p>
-            <p>{customerCenterData.notice}</p>
-            <a className="talk-btn" href={customerCenterData.talk.href}>
-              {customerCenterData.talk.label}
+            <p>hours</p>
+            <p>notice</p>
+            <a className='talk-btn' href="#">
             </a>
           </div>
         </div>
@@ -55,4 +53,5 @@ const Footer = () => {
     </footer>
   );
 };
+
 export default Footer;
