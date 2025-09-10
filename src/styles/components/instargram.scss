@@ -1,60 +1,23 @@
-/* 섹션 여백/타이포 */
-.instar {
-    padding: 48px 0 24px;
-    background: #fff;
-}
-
-.instar-inner {}
-
-.t-wrap {
-    margin-bottom: 14px;
-}
-
-.con-tit {
-    font-size: 22px;
-    font-weight: 700;
-    color: #d53030;
-}
-
-/* 스샷 톤에 가깝게 */
-.txt-4 {
-    color: #9a9a9a;
-    font-size: 14px;
-}
-
-/* 6칸 가로 그리드 + 얇은 간격 */
-.instar-lst {
-    list-style: none;
-    padding: 0;
-    margin: 12px 0 0;
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 8px;
-}
-
-/* 카드는 정사각 비율, 이미지 커버 */
-.instar-item {
-    aspect-ratio: 1 / 1;
-    overflow: hidden;
-    border-radius: 4px;
-}
-
-.instar-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-}
-
-/* 반응형: 태블릿 3칸, 모바일 2칸 */
-@media (max-width: 1024px) {
-    .instar-lst {
-        grid-template-columns: repeat(3, 1fr);
+.inner.instar-inner{
+    h2.tit {
+        color: var(--secondary);
     }
-}
-
-@media (max-width: 640px) {
-    .instar-lst {
-        grid-template-columns: repeat(2, 1fr);
+    .instar-lst{
+        display: flex;
+        gap: 1rem;
+        margin-top: 4rem;
+        >li {
+            // flex: 1;
+            width: clamp(13rem ,15vw,21.3rem);
+            height: clamp(13rem ,15vw,21.3rem);
+            a{
+                display: block;
+                width: 100%;
+                height: 100%;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        }
     }
 }
