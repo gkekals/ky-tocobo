@@ -13,12 +13,19 @@ import Hello from "./sections/Hello"
 import Collection from "./sections/Collection"
 import Skincare from "./sections/Skincare"
 import Instargram from "./sections/Instargram"
+import AOS from "aos"
+import "aos/dist/aos.css"
 function App() {
 
   const [topBanner, setTopBanner] = useState("")
-
   const [isScrolled, setIsScrolled] = useState(false)
+  const [mNavOpen, setMNavOpen] = useState(false)
 
+  useEffect(() => {
+    AOS.init({
+
+    });
+  }, [])
 
   useEffect(() => {
     const handleScroll = () => {
@@ -31,6 +38,9 @@ function App() {
 
   })
 
+  const handleNavOpen = () => setMNavOpen(true)
+  const handleNavClose = () => setMNavOpen(false)
+
 
   const upTopBanner = () => {
     setTopBanner("up")
@@ -40,7 +50,11 @@ function App() {
     <div className={`app-container  ${topBanner} ${isScrolled ? "scrolled" : ""}`}>
       <TopBtn />
       <TopBanner onClick={upTopBanner} />
-      <Header />
+      <Header
+        mNavOpen={mNavOpen}
+        onNavOpen={handleNavOpen}
+        onNavClose={handleNavClose}
+      />
       <main>
         <section id="Hero" className="Section">
           <Hero />

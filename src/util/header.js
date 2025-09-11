@@ -1,11 +1,10 @@
 const img = (path) => `/img/${path}`
 
-
 export const headerData = {
     logo: {
-        src: img("logo.svg"),  // 예: /public/img/logo_tocobo.svg
+        src: img("logo.svg"),
         alt: "TOCOBO",
-        href: "/",                    // 로고 클릭시 이동
+        href: "/",
         width: 120,
         height: 28,
     },
@@ -14,13 +13,12 @@ export const headerData = {
         { id: "Cta", label: "Cta", href: "#Cta", type: "section" },
         { id: "Hello", label: "Hello", href: "#Hello", type: "section" },
         { id: "Collection", label: "Collection", href: "#Collection", type: "section" },
-        { id: "SkinCare", label: "SkinCare", href: "#SkinCare", type: "section" },
+        { id: "Skincare", label: "Skincare", href: "#Skincare", type: "section" }, // ✅ 수정
         { id: "Instar", label: "Instar", href: "#Instar", type: "section" },
     ],
-    // 상단 공지/배너 (TopBanner용)
     topBanner: {
         enabled: true,
-        height: 64,                   // px
+        height: 64,
         items: [
             { id: "tb-1", text: "새로운 소식이 있습니다.", href: "#" },
             { id: "tb-2", text: "업데이트 안내", href: "#" },
@@ -30,13 +28,9 @@ export const headerData = {
         background: "#DC272D",
         color: "#fff",
     },
-
     utils: [
         { id: "search", label: "검색", icon: img("icon_search.svg"), href: "#" },
         { id: "account", label: "마이", icon: img("icon_myp.svg"), href: "#" },
         { id: "cart", label: "장바", icon: img("icon_cart.svg"), href: "#" },
     ],
-
-
-
 }

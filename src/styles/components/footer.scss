@@ -5,10 +5,10 @@ footer {
     .inner.foot-inner {
         display: flex;
         justify-content: space-between;
+        gap: 5rem;
         max-width: 172rem;
         margin: auto;
         position: relative;
-        gap: 5rem;
 
         .left {
             flex: 1;
@@ -70,7 +70,10 @@ footer {
                 margin-top: 2rem;
                 color: var(--primary);
                 transition: all .3s;
+            }
 
+            .footer-legal {
+                display: none;
             }
         }
 
@@ -81,6 +84,34 @@ footer {
             font-style: italic;
             font-weight: 400;
             margin-bottom: 2.5rem;
+        }
+
+        .footer-legal {
+            p {
+                color: var(--primary);
+                font-size: 1.2rem;
+                padding: 3rem 0 6rem;
+            }
+
+            .legal-links a {
+                display: inline-block;
+                margin-right: 2rem;
+                font-size: 1.3rem;
+                color: #6f6f6f;
+            }
+        }
+
+        .sns-links {
+            display: flex;
+            gap: 1.3rem;
+            list-style: none;
+            padding: 0;
+            margin-top: 3rem;
+        }
+
+        .sns-links li {
+            display: flex;
+            align-items: center;
         }
     }
 }
