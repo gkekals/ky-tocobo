@@ -1,24 +1,27 @@
-.inner.collection-inner{
+.inner.collection-inner {
     text-align: center;
+
     .t-wrap {
         margin-bottom: 7rem;
+
         h2.tit {
             color: var(--primary);
         }
+
         p.txt {
             margin-top: 2rem;
-            color:var(--secondary);
+            color: var(--secondary);
             font-size: 1.9rem;
         }
     }
-    .collection-slider{
-        .info-tit{
 
-        }
-        .kname{}
-        .name{
-            
-        }
+    .collection-slider {
+        .info-tit {}
+
+        .kname {}
+
+        .name {}
+
         .img-wrap {
             background-color: var(--bg);
             width: 36rem;
@@ -29,23 +32,44 @@
             overflow: hidden;
             margin: auto;
             border-radius: 1rem;
+
             img {
                 height: 110%;
                 width: 110%;
                 animation: up 2s infinite alternate;
             }
         }
-        .swiper-pagination{
-            margin-top: 3rem ;
+
+        .swiper-pagination {
+            margin-top: 3rem;
             position: static;
             background-color: var(--bg);
             height: .4rem;
-            .swiper-pagination-progressbar-fill{
+
+            .swiper-pagination-progressbar-fill {
                 background-color: var(--secondary);
             }
         }
+
+        @media screen and (max-width:1200px) {
+            width: clamp(90rem, 90vw, 110rem);
+
+            .img-wrap {
+                width: clamp(25rem, 26vw, 30rem);
+                height: clamp(25rem, 26vw, 30rem);
+            }
+
+            .swiper-pagination {
+                width: 90vw;
+                margin: 3rem 0;
+            }
+        }
+
+
     }
-    .prev,.next {
+
+    .prev,
+    .next {
         position: absolute;
         top: 70%;
         transform: translateY(-50%);
@@ -53,11 +77,13 @@
         width: 3.5rem;
         height: 6.7rem;
     }
+
     .prev {
         left: -5rem;
         // background-image: url('/img/...');
     }
-    .next{
+
+    .next {
         right: -5rem;
     }
 }
